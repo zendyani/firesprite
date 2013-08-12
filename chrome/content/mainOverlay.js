@@ -28,12 +28,12 @@
 // Notice that <ext-name> is used to build chrome paths like: chrome://<ext-name>/content/main.js
 // The <ext-name> should come from chrome.manifest: resource hellobootamd chrome/
 
-Firebug.registerTracePrefix("helloBootAMD;", "DBG_HELLOBOOTAMD", true,
-    "chrome://hellobootamd/skin/hellobootamd.css");
+Firebug.registerTracePrefix("fireSprite;", "DBG_FIRESPRITE", true,
+    "chrome://firesprite/skin/hellobootamd.css");
 
 // The registration process will automatically look for 'main' module and load it.
 // TODO: Replace with your extension credentials.
-var config = {id: "hellobootamd@janodvarko.cz"};
-Firebug.registerExtension("hellobootamd", config);
+var config = {id: "firesprite@janodvarko.cz"};
+Firebug.registerExtension("firesprite", config);
 
 // ********************************************************************************************* //

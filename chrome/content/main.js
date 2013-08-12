@@ -2,8 +2,8 @@
 
 define([
     "firebug/lib/trace",
-    "hellobootamd/myPanel",
-    "hellobootamd/myModule",
+    "firesprite/myPanel",
+    "firesprite/myModule",
 ],
 function(FBTrace, MyPanel, MyModule) {
 
@@ -20,8 +20,8 @@ var theApp =
 {
     initialize: function()
     {
-        if (FBTrace.DBG_HELLOBOOTAMD)
-            FBTrace.sysout("helloBootAMD; HelloBootAMD extension initialize");
+        if (FBTrace.DBG_FIRESPRITE)
+            FBTrace.sysout("fireSprite; FireSprite extension initialize");
 
         // Registration of Firebug panels and modules is made within appropriate files,
         // but it could be also done here.
@@ -31,14 +31,14 @@ var theApp =
 
     shutdown: function()
     {
-        if (FBTrace.DBG_HELLOBOOTAMD)
-            FBTrace.sysout("helloBootAMD; HelloBootAMD extension shutdown");
+        if (FBTrace.DBG_FIRESPRITE)
+            FBTrace.sysout("fireSprite; FireSprite extension shutdown");
 
         // Unregister all registered Firebug components
         Firebug.unregisterPanel(Firebug.MyPanel);
         Firebug.unregisterModule(Firebug.MyModule);
-        Firebug.unregisterStylesheet("chrome://hellobootamd/skin/hellobootamd.css");
-        Firebug.unregisterStringBundle("chrome://hellobootamd/locale/hellobootamd.properties");
+        Firebug.unregisterStylesheet("chrome://firesprite/skin/hellobootamd.css");
+        Firebug.unregisterStringBundle("chrome://firesprite/locale/hellobootamd.properties");
 
         // TODO: Extension shutdown
     }

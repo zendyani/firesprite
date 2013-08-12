@@ -130,14 +130,14 @@ function firebugFrameLoad(Firebug)
     // Register trace listener the customizes trace logs coming from this extension
     // * helloBootAMD; is unique prefix of all messages that should be customized.
     // * DBG_HELLOBOOTAMD is a class name with style defined in the specified stylesheet.
-    Firebug.registerTracePrefix("helloBootAMD;", "DBG_HELLOBOOTAMD", true,
-        "chrome://hellobootamd/skin/hellobootamd.css");
+    Firebug.registerTracePrefix("fireSprite;", "DBG_FIRESPRITE", true,
+        "chrome://firesprite/skin/hellobootamd.css");
 
     // The registration process will automatically look for 'main' module and load it.
     // The is the same what happens in a XUL overlay applied on:
     // chrome://firebug/content/firebugOverlay.xul
-    var config = {id: "hellobootamd@janodvarko.cz"};
-    Firebug.registerExtension("hellobootamd", config);
+    var config = {id: "firesprite@janodvarko.cz"};
+    Firebug.registerExtension("firesprite", config);
 }
 
 function firebugFrameUnload(Firebug)
@@ -145,8 +145,8 @@ function firebugFrameUnload(Firebug)
     if (!Firebug.isInitialized)
         return;
 
-    Firebug.unregisterExtension("hellobootamd");
-    Firebug.unregisterTracePrefix("helloBootAMD;");
+    Firebug.unregisterExtension("firesprite");
+    Firebug.unregisterTracePrefix("fireSprite;");
 }
 
 // ********************************************************************************************* //

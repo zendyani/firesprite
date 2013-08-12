@@ -11,13 +11,13 @@ function(Obj, FBTrace, Locale, Domplate) {
 // ********************************************************************************************* //
 // Custom Panel Implementation
 
-var panelName = "hellobootamd";
+var panelName = "fireSprite";
 
 Firebug.MyPanel = function MyPanel() {};
 Firebug.MyPanel.prototype = Obj.extend(Firebug.Panel,
 {
     name: panelName,
-    title: "Hello Boot AMD!",
+    title: "fireSprite",
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
     // Initialization
@@ -26,8 +26,8 @@ Firebug.MyPanel.prototype = Obj.extend(Firebug.Panel,
     {
         Firebug.Panel.initialize.apply(this, arguments);
 
-        if (FBTrace.DBG_HELLOBOOTAMD)
-            FBTrace.sysout("helloBootAMD; MyPanel.initialize");
+        if (FBTrace.DBG_FIRESPRITE)
+            FBTrace.sysout("fireSprite; MyPanel.initialize");
 
         // TODO: Panel initialization (there is one panel instance per browser tab)
 
@@ -36,8 +36,8 @@ Firebug.MyPanel.prototype = Obj.extend(Firebug.Panel,
 
     destroy: function(state)
     {
-        if (FBTrace.DBG_HELLOBOOTAMD)
-            FBTrace.sysout("helloBootAMD; MyPanel.destroy");
+        if (FBTrace.DBG_FIRESPRITE)
+            FBTrace.sysout("fireSprite; MyPanel.destroy");
 
         Firebug.Panel.destroy.apply(this, arguments);
     },
@@ -46,8 +46,8 @@ Firebug.MyPanel.prototype = Obj.extend(Firebug.Panel,
     {
         Firebug.Panel.show.apply(this, arguments);
 
-        if (FBTrace.DBG_HELLOBOOTAMD)
-            FBTrace.sysout("helloBootAMD; MyPanel.show");
+        if (FBTrace.DBG_FIRESPRITE)
+            FBTrace.sysout("fireSprite; MyPanel.show");
     },
 
     refresh: function()
@@ -64,7 +64,7 @@ Firebug.MyPanel.prototype = Obj.extend(Firebug.Panel,
 // Panel UI (Domplate)
 
 // Register locales before the following template definition.
-Firebug.registerStringBundle("chrome://hellobootamd/locale/hellobootamd.properties");
+Firebug.registerStringBundle("chrome://firesprite/locale/hellobootamd.properties");
 
 /**
  * Domplate template used to render panel's content. Note that the template uses
@@ -89,10 +89,10 @@ Firebug.MyPanel.prototype.MyTemplate = domplate(
 // Registration
 
 Firebug.registerPanel(Firebug.MyPanel);
-Firebug.registerStylesheet("chrome://hellobootamd/skin/hellobootamd.css");
+Firebug.registerStylesheet("chrome://firesprite/skin/hellobootamd.css");
 
-if (FBTrace.DBG_HELLOBOOTAMD)
-    FBTrace.sysout("helloBootAMD; myPanel.js, stylesheet registered");
+if (FBTrace.DBG_FIRESPRITE)
+    FBTrace.sysout("fireSprite; myPanel.js, stylesheet registered");
 
 return Firebug.MyPanel;
 
