@@ -128,8 +128,8 @@ function topWindowUnload(win)
 function firebugFrameLoad(Firebug)
 {
     // Register trace listener the customizes trace logs coming from this extension
-    // * helloBootAMD; is unique prefix of all messages that should be customized.
-    // * DBG_HELLOBOOTAMD is a class name with style defined in the specified stylesheet.
+    // * fireSprite; is unique prefix of all messages that should be customized.
+    // * DBG_FIRESPRITE is a class name with style defined in the specified stylesheet.
     Firebug.registerTracePrefix("fireSprite;", "DBG_FIRESPRITE", true,
         "chrome://firesprite/skin/hellobootamd.css");
 

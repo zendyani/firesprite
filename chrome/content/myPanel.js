@@ -64,7 +64,7 @@ Firebug.MyPanel.prototype = Obj.extend(Firebug.Panel,
 // Panel UI (Domplate)
 
 // Register locales before the following template definition.
-Firebug.registerStringBundle("chrome://firesprite/locale/hellobootamd.properties");
+Firebug.registerStringBundle("chrome://firesprite/locale/firesprite.properties");
 
 /**
  * Domplate template used to render panel's content. Note that the template uses
@@ -76,7 +76,7 @@ Firebug.MyPanel.prototype.MyTemplate = domplate(
 {
     tag:
         SPAN(
-            Locale.$STR("hellobootamd.panel.label")
+            Locale.$STR("firesprite.panel.label")
         ),
 
     render: function(parentNode)

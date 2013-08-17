@@ -38,7 +38,7 @@ var theApp =
         Firebug.unregisterPanel(Firebug.MyPanel);
         Firebug.unregisterModule(Firebug.MyModule);
         Firebug.unregisterStylesheet("chrome://firesprite/skin/hellobootamd.css");
-        Firebug.unregisterStringBundle("chrome://firesprite/locale/hellobootamd.properties");
+        Firebug.unregisterStringBundle("chrome://firesprite/locale/firesprite.properties");
 
         // TODO: Extension shutdown
     }

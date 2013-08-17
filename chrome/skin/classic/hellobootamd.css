@@ -18,6 +18,6 @@
    This helps to distinguish logs from those coming from Firebug
    Rule syntax: .DBG_<ext-id>
    See: http://getfirebug.com/wiki/index.php/FBTrace for more details */
-.DBG_HELLOBOOTAMD {
+.DBG_FIRESPRITE {
     color: rgb(101, 0, 114);
 }
