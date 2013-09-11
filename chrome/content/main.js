@@ -3,7 +3,7 @@
 define([
     "firebug/lib/trace",
     "firesprite/myPanel",
-    "firesprite/myModule",
+    "firesprite/myModule"
 ],
 function(FBTrace, MyPanel, MyModule) {
 

@@ -17,19 +17,11 @@ Firebug.MyModule = Obj.extend(Firebug.Module,
     initialize: function(owner)
     {
         Firebug.Module.initialize.apply(this, arguments);
-
-        // TODO: Module initialization (there is one module instance per browser window)
-
-        if (FBTrace.DBG_FIRESPRITE)
-            FBTrace.sysout("fireSprite; MyModule.initialize");
     },
 
     shutdown: function()
     {
         Firebug.Module.shutdown.apply(this, arguments);
-
-        if (FBTrace.DBG_FIRESPRITE)
-            FBTrace.sysout("fireSprite; MyModule.shutdown");
     },
 });
 
