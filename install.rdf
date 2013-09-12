@@ -12,15 +12,15 @@
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>10.0</em:minVersion>
-        <em:maxVersion>25.*</em:maxVersion>
+        <em:minVersion>22.0</em:minVersion>
+        <em:maxVersion>26.*</em:maxVersion>
       </Description>
     </em:targetApplication>
 
     <!-- Front End MetaData -->
     <em:name>FireSprite!</em:name>
     <em:description>firebug extension to generate images sprite and css code associated from a bloc of html code</em:description>
-    <em:creator>Jan Odvarko</em:creator>
-    <em:homepageURL>http://getfirebug.com</em:homepageURL>
+    <em:creator>Abdeldjalil Belakhdar</em:creator>
+    <em:homepageURL>https://github.com/zendyani/firesprite</em:homepageURL>
   </Description>
 </RDF>
